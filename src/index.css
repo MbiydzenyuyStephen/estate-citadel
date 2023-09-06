@@ -1,1 +1,50 @@
+.logo {
+  display: block;
+  margin: auto;;
+  width: 50%;
+}
 
+.header{
+  text-align: center;
+  color: blue;
+  padding: auto;
+  margin: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+.signupFormTitle, .signinFormTitle{
+  text-align: center;
+  color: blue;
+  margin: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.form{
+  max-width: 50%;
+  border: 1px solid #7a7a7a;
+  padding: 20px;
+  background-color: #bababd60;
+  border-radius: 30px;
+  margin: auto;
+}
+
+
+.accountButton{
+margin-left: 10px;
+border-radius: 8px;
+background-color: rgb(253, 167, 8);
+font-style: italic;
+border: 0;
+height: 40px;
+
+}
+
+label{
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+body{
+ background-image: url(./image/log-sign-bg.jpg);
+ background-position: center;
+}
