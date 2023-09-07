@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "../index.css";
+import "../styles/signin_&_signup_stylesheet.css";
+import logo from '../image/logo.png';
 
 const Signin = () => {
   return (
-    <body>
+    <div className="signinBody">
       <div className="container">
         <h1 className="header">ESTATE CITADEL</h1>
         <div className="form">
           <img
             className="logo"
-            src="/images/logo.png"
+            src={logo}
             alt="Logo"
             width="250"
             height="100"
@@ -19,12 +20,12 @@ const Signin = () => {
           <h3 className="signinFormTitle">Signin</h3>
           <form>
             <div className="form-group">
-              <label for="email">Email/Username</label>
+              <label for="email">Email</label>
               <input
-                type="text"
+                type="email"
                 className="form-control"
                 id="email"
-                placeholder="Enter email or username"
+                placeholder="Enter email "
                 required
               />
             </div>
@@ -41,13 +42,13 @@ const Signin = () => {
             <button type="submit" className="btn btn-primary">
               Signin
             </button>
-            <Link to="/">
+            <Link to="/signup">
               <button className="accountButton">I dont have an account</button>
             </Link>
           </form>
         </div>
       </div>
-    </body>
+    </div>
   );
 };
 

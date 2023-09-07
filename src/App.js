@@ -9,9 +9,9 @@ function App() {
     <Router>
         <Switch>
             <Route exact path="/"
-            component={Signup} />
-            <Route path="/signin"
             component={Signin} />
+            <Route  path="/signup"
+            component={Signup} />
         </Switch>
     </Router>
   );
