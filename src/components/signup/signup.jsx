@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "../styles/signin_&_signup_stylesheet.css";
+import "./signup.css";
 import { Link } from "react-router-dom";
-import logo from '../image/logo.png'
+import logo from './logo.png'
 
-const Signup = () => {
+const SignUp = () => {
   return (
     <div className="signupBody">
       <div className="container">
@@ -17,7 +17,7 @@ const Signup = () => {
             width="250"
             height="100"
           />
-          <h3 className="signinFormTitle">Signup</h3>
+          <h3 className="signinFormTitle">Sign Up</h3>
           <form>
             <div className="form-group">
               <label for="email">Username</label>
@@ -92,7 +92,7 @@ const Signup = () => {
               </label>
             </div>
             <button type="submit" className="btn btn-primary">
-              Signup
+              Sign Up
             </button>
             <Link to="/">
               <button className="accountButton">I have an account</button>
@@ -104,4 +104,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default SignUp;

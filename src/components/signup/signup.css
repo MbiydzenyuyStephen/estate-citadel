@@ -36,6 +36,7 @@ background-color: rgb(253, 167, 8);
 font-style: italic;
 border: 0;
 height: 40px;
+text-align: center;
 
 }
 
@@ -45,6 +46,10 @@ label{
 }
 
 body{
- background-image: url(../image/log-sign-bg.jpg);
+ background-image: url(./log-sign-bg.jpg);
  background-size: cover;
+}
+
+button {
+  padding-bottom: 40px;
 }
