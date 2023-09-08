@@ -42,7 +42,7 @@ label{
   color: rgb(0, 0, 0);
 }
 
-.signInContainer{
+.signIn-Container{
  background-image: url(../../assets/log-sign-bg.jpg);
  background-size: cover;
  position:fixed;
