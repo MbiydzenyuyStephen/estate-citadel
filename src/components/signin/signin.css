@@ -1,6 +1,6 @@
 .signInLogo {
   display: block;
-  margin: auto;;
+  margin: auto;
   width: 50%;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .signInForm{
-  width: 30%;
+  width: 25%;
   border: 1px solid #7a7a7a;
   padding: 20px;
   background-color: #bababd60;
