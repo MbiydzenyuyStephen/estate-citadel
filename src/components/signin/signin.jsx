@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
 import "./signin.css";
-import logo from "./logo.png";
+import logo from '../../assets/logo.png';
 
 const SignIn = () => {
   return (
-    <div className="container">
-      <h1 className="header">ESTATE CITADEL</h1>
-      <div className="form">
-        <img className="logo" src={logo} alt="Logo" width="250" height="100" />
+    <div className="signInContainer">
+      <h1 className="signInHeader">ESTATE CITADEL</h1>
+      <div className="signInForm">
+        <img className="signInLogo" src={logo} alt="Logo" width="250" height="100" />
         <h3 className="signinFormTitle">Signin</h3>
-        <form>
+        <form className="formbody">
           <div className="form-group">
             <label for="email">Email</label>
             <input
@@ -36,7 +35,7 @@ const SignIn = () => {
             SignIn
           </button>
           <Link to="/signup">
-            <button className="accountButton">I dont have an account</button>
+            <button className="signInAccountButton">I dont have an account</button>
           </Link>
         </form>
       </div>
