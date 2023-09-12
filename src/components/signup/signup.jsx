@@ -9,7 +9,7 @@ const SignUp = () => {
       <h1 className="signUpHeader">ESTATE CITADEL</h1>
       <div className="signUpForm">
         <img className="signUpLogo" src={logo} alt="Logo" width="250" height="100" />
-        <h3 className="signinFormTitle">Sign Up</h3>
+        <h2 className="signinFormTitle">Sign Up</h2>
         <form>
           <div className="form-group">
             <label for="email">Username</label>
