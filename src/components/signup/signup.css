@@ -1,49 +1,18 @@
-.signUpLogo {
-  display: block;
-  margin: auto;
-  width: 50%;
-}
 
-.signUpHeader{
-  text-align: center;
-  color: blue;
-  padding: auto;
-  margin: 50px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-}
-
-.signupFormTitle{
-  text-align: center;
-  color: blue;
-  margin: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-}
-
-.signUpForm{
-  width: 25%;
-  border: 1px solid #7a7a7a;
-  padding: 20px;
-  background-color: #bababd60;
-  border-radius: 30px;
-  margin:auto;
-}
-
-.signUpAccountButton {
-margin-left: 10px;
-border-radius: 8px;
-background-color: rgb(253, 167, 8);
-font-style: italic;
-border: none;
-height: 40px;
-}
-
-
-
-.signUpContainer{
+.sign-up-bg{
   background-image: url(../../assets/log-sign-bg.jpg);
   background-size: cover;
-  position:fixed;
-  min-height: 100%;
-  min-width: 100%;
   background-position: center;
+ }
+ 
+ .custom-form-content {
+   border-radius: 10px;
+   padding: 20px;
+   background-color: #09294920;
+   width: 500px;
+   
+ }
+ 
+ .font-weight-bold-sign-up {
+   font-weight: bold;
  }

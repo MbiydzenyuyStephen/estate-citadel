@@ -2,61 +2,115 @@ import React from "react";
 import logo from "../../assets/logo.png";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import "./navbar.css";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand">
-          <Link to="/Home">
-            <img src={logo} alt="Logo" />
-          </Link>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item" >
-              <Link className="nav-link" id="navBarLinks" to="/BuyHouse">
-                Buy a House
-              </Link>
-            </li>
-            <li className="nav-item" >
-              <Link className="nav-link" id="navBarLinks" to="/RentHouse">
-                Buy a House
-              </Link>
-            </li>
-            <li className="nav-item" id="navBarLinks">
-              <Link className="nav-link" id="navBarLinks" to="/BuyPlot">
-                Buy a Plot
-              </Link>
-            </li>
-          </ul>
-
-          <div className="d-flex" role="search">
-              <Link className="nav-link" id="navBarLinks" to="/BuyPlot">
-                Rent a Truck
-              </Link>
-            <Link  to="/Help" className="nav-link"  id="navBarLinks" >
-                Help
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand>
+          <a class="navbar-brand">
+            <Link to="/">
+              <img src={logo} alt="Logo" />
             </Link>
-            <Link  to="/Profile" className="nav-link"  id="navBarLinks">
-                <FaUser/>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </nav>
+          </a>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link>
+              <li className="nav-item">
+                <Link
+                  style={{ fontSize: "25px", hover: "black" }}
+                  className="nav-link navtext"
+                  id="navBarLinks"
+                  to="/BuyHouse"
+                >
+                  Buy House
+                </Link>
+              </li>
+            </Nav.Link>
+            <Nav.Link>
+              <li className="nav-item">
+                <Link
+                  style={{ fontSize: "25px" }}
+                  className="nav-link navtext"
+                  id="navBarLinks"
+                  to="/RentHouse"
+                >
+                  Rent House
+                </Link>
+              </li>
+            </Nav.Link>
+            <Nav.Link>
+              <li className="nav-item navtext">
+                <Link
+                  style={{ fontSize: "25px" }}
+                  className="nav-link navtext"
+                  id="navBarLinks"
+                  to="/BuyPlot"
+                >
+                  Buy Plot
+                </Link>
+              </li>
+            </Nav.Link>
+            <Nav.Link>
+              <li className="nav-item">
+                <Link
+                  style={{ fontSize: "25px" }}
+                  className="nav-link navtext"
+                  id="navBarLinks"
+                  to="/RentTruck"
+                >
+                  Rent Truck
+                </Link>
+              </li>
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link>
+              <li className="nav-item">
+                <Link
+                  className="nav-link navtext"
+                  style={{ fontSize: "25px" }}
+                  id="navBarLinks"
+                  to="/help"
+                >
+                  Help
+                </Link>
+              </li>
+            </Nav.Link>
+            <NavDropdown
+              style={{ fontSize: "25px" }}
+              title=<FaUser />
+              id="basic-nav-dropdown"
+            >
+              <NavDropdown.Item>
+                <Link
+                  style={{ fontSize: "25px" }}
+                  id="drop-down-link"
+                  to="/signin"
+                >
+                  Sign Out
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
