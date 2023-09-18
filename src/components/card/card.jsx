@@ -9,7 +9,7 @@ const Card = () => {
     <div className="container">
       <div className="row">
         <div className="col-12 col-lg-6">
-          <div className="card">
+          <div className="card shadow">
             <img src={CardImage} alt="cardimage" className="card-img-top" />
             <div className="card-img-overlay">
               <button className="house-name-button">Penbroke</button>

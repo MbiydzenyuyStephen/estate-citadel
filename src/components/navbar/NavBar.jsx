@@ -10,9 +10,9 @@ import "./navbar.css";
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand>
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary ">
+      <Container className="navbar-width" >
+        <Navbar.Brand >
           <a class="navbar-brand">
             <Link to="/">
               <img src={logo} alt="Logo" />

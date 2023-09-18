@@ -12,6 +12,20 @@ input::placeholder {
     font-size: 25px;
   }
 
+  .searchcards{
+    margin-left: 25px;
+}
+
+.recommended-homes {
+text-align: center;
+}
+
+.static-card-button {
+    text-align: center;
+    border-color: blue;
+}
+
+
 
 
 
