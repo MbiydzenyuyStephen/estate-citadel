@@ -16,7 +16,8 @@ input::placeholder {
     margin-left: 25px;
 }
 
-.recommended-homes {
+.more-recommended-homes {
+text-decoration: none;
 text-align: center;
 }
 

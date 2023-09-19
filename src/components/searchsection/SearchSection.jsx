@@ -30,8 +30,8 @@ const SearchSection = () => {
         <div className="row justify-content-center">
           <div className="col-12">
             <div className="row mt-5 mb-5">
-            <h2>Homes For You</h2>
-            <h6>Based on your view history</h6>
+              <h2>Homes For You</h2>
+              <h6>Based on your search history</h6>
               <div className="col-12 col-lg-4 d-flex justify-content-center searchcards">
                 <Card />
               </div>
@@ -42,10 +42,9 @@ const SearchSection = () => {
                 <Card />
               </div>
             </div>
-
             <Link to="/signup">
-              <h4 className="recommended-homes">
-              <FaArrowDown />  More recommended homes
+              <h4 className="more-recommended-homes">
+                <FaArrowDown /> More recommended homes
               </h4>
             </Link>
           </div>
