@@ -1,0 +1,18 @@
+.img-fluid {
+    height: 200px;
+    width: 20px;
+
+}
+
+.appstorelogo {
+    height: 105px;
+    width: 300px;
+    margin-right: 600px;
+}
+
+.playstorelogo {
+    height: 105px;
+    width: 300px;
+    margin-left: 400px;
+}
+

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const SearchSection = () => {
   return (
-    <div>
+    <div className="col">
       <div className="bg-image vh-100 d-flex justify-content-center align-items-center">
         <div className="container mt-5 mb-5">
           <h1 className="text-center text-white">
@@ -32,24 +32,28 @@ const SearchSection = () => {
             <div className="row mt-5 mb-5">
               <h2>Homes For You</h2>
               <h6>Based on your search history</h6>
-              <div className="col-12 col-lg-4 d-flex justify-content-center searchcards">
+              <div className="col-12 col-lg-4 col-sm-4 d-flex justify-content-center searchcards">
                 <Card />
               </div>
-              <div className="col-12 col-lg-4 d-flex justify-content-center searchcards">
+              <div className="col-12 col-lg-4 col-sm-4 d-flex justify-content-center searchcards">
                 <Card />
               </div>
-              <div className="col-12 col-lg-2 d-flex justify-content-center searchcards">
+              <div className="col-12 col-lg-2 col-sm-4 d-flex justify-content-center searchcards">
                 <Card />
               </div>
             </div>
-            <Link to="/signup">
+           <div className="col"> 
+           <Link to="/signup">
               <h4 className="more-recommended-homes">
                 <FaArrowDown /> More recommended homes
               </h4>
-            </Link>
+            </Link></div>
           </div>
         </div>
       </div>
+
+
+      
     </div>
   );
 };
