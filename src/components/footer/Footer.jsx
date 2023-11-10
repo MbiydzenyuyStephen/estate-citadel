@@ -51,21 +51,21 @@ const Footer = () => {
           <br />
           <div className="row justify-content-center">
             <div className="col-12 d-flex justify-content-center align-items-center">
-              <div className="col-6 img-fluid">
+              {/* <div className="col-6 img-fluid">
                 <img className="playstorelogo" src={PlayStoreLogo} alt="" />
               </div>
               <div className="col-6 img-fluid">
                 <img className="appstorelogo" src={AppStoreLogo} alt="" />
-              </div>
+              </div> */}
             </div>
-            <div className="row">
-            <a class="navbar-brand col-3">
-            <Link to="/">
-              <img src={Logo} alt="Logo" />
-            </Link>
-          </a> 
-          Follow us:
-            </div>
+            {/* <div className="row">
+              <a class="navbar-brand col-3">
+                <Link to="/">
+                  <img src={Logo} alt="Logo" />
+                </Link>
+              </a> 
+                  Follow us:
+            </div> */}
 
             <div className="col-6  d-flex align-items-center justify-content-center">
               <img src={FooterImage} alt="Footerimage" />
