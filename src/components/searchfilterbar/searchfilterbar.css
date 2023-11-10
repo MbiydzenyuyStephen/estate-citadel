@@ -1,0 +1,16 @@
+/* searchFilterBar.css */
+.search-bar-of-search-filter-bar {
+    width: 400px; /* Adjust the width as per your requirement */
+    height: 40px; /* Adjust the height as per your requirement */
+    margin-right: 10px; /* Add right margin to the input box */
+    margin-left: 10px;
+  }
+  
+  .btn-margin {
+    margin-right: 10px; /* Add right margin to the buttons */
+  }
+
+  .btn.btn-light {
+    border: 1px solid #ced4da;
+    margin:5px;
+  }

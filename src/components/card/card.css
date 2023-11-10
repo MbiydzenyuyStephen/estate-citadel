@@ -1,0 +1,21 @@
+.card {
+    width: 25rem;
+}
+
+.like-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+}
+
+.house-name-button {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.651);
+    border-color: rgba(104, 78, 78, 0);
+    color: aliceblue;
+    font-weight: bold;
+    width: fit-content;
+}
+
+
