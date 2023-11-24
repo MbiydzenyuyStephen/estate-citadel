@@ -1,0 +1,35 @@
+.bg-image {
+    background-image: url(../../assets/search-section-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.search-bar {
+    height: 70px;
+    font-size: 30px;
+}
+
+search-bar {
+    font-size: 25px;
+  }
+
+  .searchcards{
+    margin-left: 25px;
+}
+
+.more-recommended-homes {
+text-decoration: none;
+text-align: center;
+}
+
+.static-card-button {
+    text-align: center;
+    border-color: blue;
+}
+
+
+
+
+
+
+
+ 
