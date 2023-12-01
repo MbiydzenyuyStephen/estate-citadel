@@ -1,14 +1,61 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./signup.css";
+import Joi from 'joi-browser';
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
+const schema = Joi.object({
+    username: Joi.string().alphanum().min(3).max(30).required(),
+    email: Joi.string().email().required(),
+    fullName: Joi.string().required(),
+    password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')).required(),
+    confirmPassword: Joi.ref('password'),
+    isLandlord: Joi.boolean().required(),
+    acceptTerms: Joi.boolean().valid(true).required(),
+  });
+  
 const SignUp = () => {
+    const [formData, setFormData] = useState({
+      username: '',
+      email: '',
+      fullName: '',
+      password: '',
+      confirmPassword: '',
+      isLandlord: false,
+      acceptTerms: false,
+    });
+    const [errors, setErrors] = useState({});
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      const { error } = schema.validate(formData, { abortEarly: false });
+  
+      if (error) {
+        const validationErrors = {};
+        error.details.forEach((detail) => {
+          validationErrors[detail.path[0]] = detail.message;
+        });
+        setErrors(validationErrors);
+      } else {
+        setErrors({});
+        // form is valid, proceed with submission
+        console.log('Form is valid:', formData);
+      }
+    };
+  
+    const handleChange = (e) => {
+      const { name, value, type, checked } = e.target;
+      const newValue = type === 'checkbox' ? checked : value;
+      setFormData({ ...formData, [name]: newValue });
+    };
+
+
   return (
     <div className="Container sign-up-bg">
       <div className=" row">
         <div className="col-lg-4 offset-lg-4 col-md-6 offset-md-3">
-          <form className="border custom-form-content">
+          <form className="border custom-form-content" onSubmit={handleSubmit} >
             <div className="text-center">
               <img
                 className="signUpLogo image-fluid"
@@ -24,10 +71,14 @@ const SignUp = () => {
                 <span className="font-weight-bold-sign-up">Username</span>
               </label>
               <input
-                type="username"
+                type="text"
                 class="form-control"
                 id="username"
                 placeholder="Enter username"
+                name="username"
+                value={formData.username}
+                onChange={handleChange}
+
               />
             </div>
             <div class="form-group">
